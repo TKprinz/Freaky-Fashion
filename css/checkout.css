@@ -40,6 +40,14 @@ table {
   font-size: 18px;
 }
 
+.rad1 {
+  background-color: darkgray;
+}
+
+.rad2 {
+  background-color: lightgray;
+}
+
 input,
 label,
 button {
@@ -83,8 +91,10 @@ fieldset {
 
 #stad {
   height: 50px;
-  text-align: end;
+  text-align: start;
   display: inline-block;
+  width: 17%;
+  margin-left: 18px;
 }
 
 legend {
@@ -96,6 +106,10 @@ form :nth-child(3) {
   grid-template-columns: 1fr 50fr;
 }
 
+label {
+  margin: 0;
+}
+
 button {
   display: block;
   border: 1px solid black;
@@ -104,4 +118,9 @@ button {
   width: 140px;
   margin: 25px auto;
   color: black;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 5%;
 }
