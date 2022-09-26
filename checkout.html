@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/checkout.css" />
+    <h1>Kassan</h1>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Produkt</th>
+        <th>Pris</th>
+        <th>Antal</th>
+        <th>Belopp</th>
+      </tr>
+      <tr>
+        <th>Svart T-Shirt</th>
+        <th>199</th>
+        <th>1</th>
+        <th>199kr</th>
+      </tr>
+      <tr>
+        <th>Rosa T-Shirt</th>
+        <th>149</th>
+        <th>2</th>
+        <th>298kr</th>
+      </tr>
+    </table>
+    <span>Totalt 497kr</span>
+    <form action="">
+      <section class="info">
+        <div>
+          <label for="firstname">Förnamn</label>
+          <input type="text" name="firstname" id="firstname" />
+        </div>
+        <div>
+          <label for="lastname">Efternamn</label>
+          <input type="text" name="lastname" id="lastname" />
+        </div>
+        <div>
+          <label for="email">E-post</label>
+          <input type="email" name="email" id="email" />
+        </div>
+      </section>
+      <fieldset>
+        <legend>Adress</legend>
+        <label for="gata">Gata:</label>
+        <input type="text" id="gata" name="gata" />
+        <label for="postnummer">Postnummer:</label>
+        <input type="number" id="postnummer" name="postnummer" />
+
+        <label for="stad">Stad:</label>
+        <select name="stad" id="stad">
+          <option value="Helsingborg">Helsingborg</option>
+          <option value="Båstad">Båstad</option>
+          <option value="Malmö">Malmö</option>
+          <option value="Stockholm">Stockholm</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Betalningsalternativ</legend>
+        <input type="radio" name="payment" id="Klarna" />
+        <label for="">Klarna</label>
+        <input type="radio" name="payment" id="Kreditkort" />
+        <label for="">Kreditkort</label>
+        <input type="radio" name="payment" id="Swish" />
+        <label for="">Swish</label>
+      </fieldset>
+      <button class="submit" x>KÖP NU</button>
+    </form>
+  </body>
+</html>
